@@ -3,7 +3,6 @@ Verilog implementation of a Dadda multiplier-based Sobel edge detection engine u
 
 A hardware implementation of a **3×3 image convolution engine** using a **32-bit hierarchical Dadda Multiplier** to accelerate Sobel edge detection on grayscale images. The project is written entirely in **Verilog HDL** and demonstrates efficient convolution-based image processing suitable for FPGA implementation.
 
----
 
 ## Overview
 
@@ -11,7 +10,6 @@ Image convolution is one of the most computationally intensive operations in dig
 
 This implementation utilizes a Dadda multiplier to perform the nine multiplication operations required for each convolution window, followed by an adder chain to generate the final convolution result. The design demonstrates how optimized hardware arithmetic can improve the efficiency of convolution operations commonly used in edge detection and CNN convolution layers.
 
----
 
 ## Features
 
@@ -23,9 +21,6 @@ This implementation utilizes a Dadda multiplier to perform the nine multiplicati
 - FPGA-friendly architecture
 - Fixed-point arithmetic
 - Modular and reusable design
-
----
-
 
 
 ## Architecture
@@ -55,9 +50,7 @@ Convolution Output
       │
       ▼
 Edge Detected Image
-```
 
----
 
 ## Sobel Kernels
 
@@ -77,8 +70,6 @@ Edge Detected Image
  1   2   1
 ```
 
----
-
 ## Working Principle
 
 For every output pixel:
@@ -90,7 +81,7 @@ For every output pixel:
 5. Pixel values are clamped to the 8-bit grayscale range (0–255).
 6. The resulting edge pixel is written to the output memory file.
 
----
+
 ## Experimental Results
 
 The convolution engine was validated using grayscale images of different resolutions. The generated edge-detected images demonstrate the scalability of the proposed Dadda multiplier-based convolution engine without requiring changes to the hardware architecture.
@@ -149,16 +140,3 @@ The convolution engine was validated using grayscale images of different resolut
 - Integration with a RISC-V processor
 - CNN accelerator framework
 
----
-
-## Author
-
-**Keerthana A**
-
-Electronics and Communication Engineering
-
----
-
-## License
-
-This project is intended for educational and research purposes.
