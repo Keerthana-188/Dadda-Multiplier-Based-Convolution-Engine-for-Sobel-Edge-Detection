@@ -2,7 +2,7 @@ module dadda_multiplier_32_unsigned(
     input [31:0] a, 
     input [31:0] b, 
     output [63:0] product 
-); 
+);
 wire [31:0] p0; 
 wire [31:0] p1; 
 wire [31:0] p2; 
