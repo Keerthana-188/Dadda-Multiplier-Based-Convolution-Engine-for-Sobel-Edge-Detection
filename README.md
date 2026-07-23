@@ -22,7 +22,6 @@ This implementation utilizes a Dadda multiplier to perform the nine multiplicati
 - Fixed-point arithmetic
 - Modular and reusable design
 
-
 ## Architecture
 
 The convolution engine consists of:
@@ -50,7 +49,9 @@ Convolution Output
       │
       ▼
 Edge Detected Image
+```
 
+---
 
 ## Sobel Kernels
 
@@ -69,6 +70,10 @@ Edge Detected Image
  0   0   0
  1   2   1
 ```
+
+---
+
+
 
 ## Working Principle
 
