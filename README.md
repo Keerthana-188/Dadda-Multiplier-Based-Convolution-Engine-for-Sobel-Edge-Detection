@@ -97,19 +97,19 @@ The convolution engine was validated using grayscale images of different resolut
 
 | Input Image | Edge Detected Output |
 |-------------|----------------------|
-| ![](Input_32x32.png) | ![](Output_30x30.png) |
+| ![](Images/Input_32x32.png) | ![](Images/Output_30x30.png) |
 
 ### 64×64 Image
 
 | Input Image | Edge Detected Output |
 |-------------|----------------------|
-| ![](Input_64x64.png) | ![](Output_62x62.png) |
+| ![](Images/Input_64x64.png) | ![](Images/Output_62x62.png) |
 
 ### 490×490 Image
 
 | Input Image | Edge Detected Output |
 |-------------|----------------------|
-| ![](Input_490x490.png) | ![](Output_488x488.png) |
+| ![](Images/Input_490x490.png) | ![](Images/Output_488x488.png) |
 
 > **Note:** The output image dimensions are reduced by two pixels in both width and height because the convolution engine performs a **3×3 valid convolution** (no zero-padding), resulting in output sizes of **30×30**, **62×62**, and **488×488** for input images of **32×32**, **64×64**, and **490×490**, respectively.
 ## Technologies Used
