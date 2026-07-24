@@ -91,28 +91,27 @@ For every output pixel:
 
 The convolution engine was validated using grayscale images of different resolutions. The generated edge-detected images demonstrate the scalability of the proposed Dadda multiplier-based convolution engine without requiring changes to the hardware architecture.
 
+## Experimental Results
+
 ### 32×32 Image
 
 | Input Image | Edge Detected Output |
 |-------------|----------------------|
-| ![](docs/images/input_32.png) | ![](docs/images/output_32.png) |
-
----
+| ![](Input_32x32.png) | ![](Output_30x30.png) |
 
 ### 64×64 Image
 
 | Input Image | Edge Detected Output |
 |-------------|----------------------|
-| ![](docs/images/input_64.png) | ![](docs/images/output_64.png) |
-
----
+| ![](Input_64x64.png) | ![](Output_62x62.png) |
 
 ### 490×490 Image
 
 | Input Image | Edge Detected Output |
 |-------------|----------------------|
-| ![](docs/images/input_490.png) | ![](docs/images/output_490.png) |
+| ![](Input_490x490.png) | ![](Output_488x488.png) |
 
+> **Note:** The output image dimensions are reduced by two pixels in both width and height because the convolution engine performs a **3×3 valid convolution** (no zero-padding), resulting in output sizes of **30×30**, **62×62**, and **488×488** for input images of **32×32**, **64×64**, and **490×490**, respectively.
 ## Technologies Used
 
 - Verilog HDL
